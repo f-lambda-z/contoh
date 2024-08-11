@@ -46,9 +46,15 @@ layout: hextra-home
   {{< hextra/feature-card
     title="Flexible Word Splitting"
     subtitle="Split long words intelligently to prevent them from disrupting the layout or readability."
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(255,44,184,0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
     title="Lightweight and Fast"
-    subtitle="With a minimal footprint, TextWrap.js adds little to your load times, ensuring your applications remain fast and responsive."
+    subtitle="With a minimal footprint, TextWrap adds little to your load times, ensuring your applications remain fast and responsive."
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(197,39,255,0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
+
+# Why Choose TextWrap?
+
+TextWrap is the go-to choice for developers who need a reliable, easy-to-use text wrapping solution that integrates seamlessly with any JavaScript-based project. Inspired by the Python textwrap module, it offers familiar functionality to those who have worked with Python before, while being easy to learn for new users.
