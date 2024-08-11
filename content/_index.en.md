@@ -54,7 +54,3 @@ layout: hextra-home
     style="background: radial-gradient(ellipse at 50% 80%,rgba(197,39,255,0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
-
-# Why Choose TextWrap?
-
-TextWrap is the go-to choice for developers who need a reliable, easy-to-use text wrapping solution that integrates seamlessly with any JavaScript-based project. Inspired by the Python textwrap module, it offers familiar functionality to those who have worked with Python before, while being easy to learn for new users.
