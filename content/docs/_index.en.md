@@ -17,23 +17,23 @@ TextWrap.js is a JavaScript module inspired by the textwrap library in Python. I
 
 {{% steps %}}
 
-#### Text Wrapping
+### Text Wrapping
 
 TextWrap allows you to wrap text into multiple lines based on a predefined width. This module is capable of handling various cases, such as tabulated text, over-spaced text, and others.
 
-#### Text Indentation
+### Text Indentation
 
 You can specify indentation for the first line and subsequent lines separately. This is useful in creating a more organized text structure.
 
-#### Spacing and Tabulation Handling
+### Spacing and Tabulation Handling
 
 This module comes with options to replace tabulation with spaces, remove extra spaces, and ensure that each sentence end is followed by two spaces for better readability.
 
-#### Word Separation Settings
+### Word Separation Settings
 
 TextWrap supports intelligent word separation, including options to separate long words and set how hyphenated words should be treated.
 
-#### Advanced Options
+### Advanced Options
 
 The module also provides some advanced options such as maximum line handling, placeholders for truncated text, and others.
 
