@@ -1,41 +1,47 @@
 ---
 linkTitle: "Documentation"
 title: Introduction
+weight: 1
+next: /docs/getting-started
 ---
 
-👋 Hello! Welcome to the Hextra documentation!
+👋 Hello! Welcome to the TextWrap documentation!
 
 <!--more-->
 
-## What is Hextra?
+## What is TextWrap?
 
-Hextra is a modern, fast and batteries-included [Hugo][hugo] theme built with [Tailwind CSS][tailwind-css].
-Designed for building beautiful websites for documentation, blogs, and websites, it provides out-of-the-box features and flexibility to meet various requirements.
+TextWrap.js is a JavaScript module inspired by the textwrap library in Python. It brings the same robust text formatting capabilities to the JavaScript ecosystem, making it easier to handle long lines of text, control indentation, and ensure that your content looks clean and professional across all devices and platforms.
 
-## Features
+## Key Features
 
-- **Beautiful Design** - Inspired by Nextra, Hextra utilizes Tailwind CSS to offer a modern design that makes your site look outstanding.
-- **Responsive Layout and Dark Mode** - It looks great on all devices, from mobile, tablet to desktop. Dark mode is also supported to accommodate various lighting conditions.
-- **Fast and Lightweight** - Powered by Hugo, a lightning-fast static-site generator housed in a single binary file, Hextra keeps its footprint minimal. No JavaScript or Node.js are needed to use it.
-- **Full-text Search** - Built-in offline full-text search powered by FlexSearch, no additional configuration required.
-- **Battery-included** - Markdown, syntax highlighting, LaTeX math formulae, diagrams and Shortcodes elements to enhance your content. Table of contents, breadcrumbs, pagination, sidebar navigation and more are all automatically generated.
-- **Multi-language and SEO Ready** - Multi-language sites made easy with Hugo's multilingual mode. Out-of-the-box support is included for SEO tags, Open Graph, and Twitter Cards.
+{{% steps %}}
+
+#### Text Wrapping
+
+TextWrap allows you to wrap text into multiple lines based on a predefined width. This module is capable of handling various cases, such as tabulated text, over-spaced text, and others.
+
+#### Text Indentation
+
+You can specify indentation for the first line and subsequent lines separately. This is useful in creating a more organized text structure.
+
+#### Spacing and Tabulation Handling
+
+This module comes with options to replace tabulation with spaces, remove extra spaces, and ensure that each sentence end is followed by two spaces for better readability.
+
+#### Word Separation Settings
+
+TextWrap supports intelligent word separation, including options to separate long words and set how hyphenated words should be treated.
+
+#### Advanced Options
+
+The module also provides some advanced options such as maximum line handling, placeholders for truncated text, and others.
+
+{{% /steps %}}
 
 ## Questions or Feedback?
 
 {{< callout emoji="❓" >}}
-  Hextra is still in active development.
-  Have a question or feedback? Feel free to [open an issue](https://github.com/imfing/hextra/issues)!
+  TextWrap is still in active development.
+  Have a question or feedback? Feel free to [open an issue](https://github.com/BarudakRosul/textwrap/issues)!
 {{< /callout >}}
-
-## Next
-
-Dive right into the following section to get started:
-
-{{< cards >}}
-  {{< card link="getting-started" title="Getting Started" icon="document-text" subtitle="Learn how to create website using Hextra" >}}
-{{< /cards >}}
-
-[hugo]: https://gohugo.io/
-[flex-search]: https://github.com/nextapps-de/flexsearch
-[tailwind-css]: https://tailwindcss.com/
