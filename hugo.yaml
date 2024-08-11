@@ -21,12 +21,12 @@ languages:
   id:
     languageName: Indonesia
     weight: 1
-    title: Hextra
+    title: TextWrap
   en:
     languageName: English
     languageCode: en
     weight: 2
-    title: Hextra
+    title: TextWrap
 
 module:
   hugoVersion:
@@ -49,14 +49,14 @@ enableInlineShortcodes: true
 menu:
   main:
     - identifier: documentation
-      name: Documentation
+      name: Dokumentasi
       pageRef: /docs
       weight: 1
     - identifier: about
-      name: About
+      name: Tentang
       pageRef: /about
       weight: 2
-    - name: Search
+    - name: Cari
       weight: 3
       params:
         type: search
@@ -68,7 +68,7 @@ menu:
 
   sidebar:
     - identifier: more
-      name: More
+      name: Lainnya
       params:
         type: separator
       weight: 1
