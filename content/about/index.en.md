@@ -1,3 +1,8 @@
+---
+title: About
+toc: false
+---
+
 **TextWrap** is a JavaScript module that does text wrapping and filling, similar to the `textwrap` module in Python. This module was created by Rangga Fajar Oktariansyah and directly inspired by Python's `textwrap`, with the goal of bringing similar functionality to the JavaScript ecosystem.
 
 ## Background
