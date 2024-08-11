@@ -7,7 +7,7 @@ prev: /docs
 
 ## Mulai Cepat
 
-📦 [@barudakrosul/textwrap](https://npm.im/barudakrosul/textwrap)
+📦 [@barudakrosul/textwrap](https://npm.im/@barudakrosul/textwrap)
 
 Bagian ini akan memandu Anda melalui langkah-langkah yang diperlukan untuk menginstal dan mulai menggunakan TextWrap dalam proyek Anda. Di akhir panduan ini, Anda akan memiliki pemahaman dasar tentang cara mengintegrasikan dan mengonfigurasi TextWrap untuk menangani pembungkusan dan pemformatan teks dalam aplikasi JavaScript Anda.
 

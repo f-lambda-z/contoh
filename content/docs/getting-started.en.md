@@ -7,7 +7,7 @@ prev: /docs
 
 ## Quick Start
 
-📦 [@barudakrosul/textwrap](https://npm.im/barudakrosul/textwrap)
+📦 [@barudakrosul/textwrap](https://npm.im/@barudakrosul/textwrap)
 
 This section will walk you through the steps needed to install and begin using TextWrap in your project. By the end of this guide, you'll have a basic understanding of how to integrate and configure TextWrap to handle text wrapping and formatting in your JavaScript applications.
 
