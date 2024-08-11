@@ -11,14 +11,6 @@ Dalam pengembangan aplikasi berbasis teks, seperti terminal, CLI tools, atau bah
 
 Di Python, modul `textwrap` telah menjadi solusi standar untuk keperluan ini. Namun, di JavaScript, fitur serupa tidak tersedia secara bawaan dalam lingkungan Node.js atau browser, sehingga TextWrap hadir untuk mengisi kekosongan ini.
 
-## Fitur Utama
-
-1. **Pembungkusan Teks (_Text Wrapping_):** TextWrap memungkinkan Anda untuk membungkus teks menjadi beberapa baris berdasarkan lebar yang telah ditentukan. Modul ini mampu menangani berbagai kasus, seperti teks dengan tabulasi, teks dengan spasi yang berlebih, dan lain-lain.
-2. **Indentasi Teks:** Anda dapat menentukan indentasi untuk baris pertama maupun baris-baris berikutnya secara terpisah. Hal ini berguna dalam membuat struktur teks yang lebih tertata.
-3. **Penanganan Spasi dan Tabulasi:** Modul ini dilengkapi dengan opsi untuk mengganti tabulasi dengan spasi, menghapus spasi ekstra, dan memastikan bahwa setiap akhir kalimat diikuti oleh dua spasi untuk keterbacaan yang lebih baik.
-4. **Pengaturan Pemisahan Kata:** TextWrap mendukung pemisahan kata secara cerdas, termasuk opsi untuk memisahkan kata yang panjang dan mengatur bagaimana kata yang terhubung dengan tanda hubung harus diperlakukan.
-5. **Opsi Lanjutan:** Modul ini juga menyediakan beberapa opsi lanjutan seperti penanganan baris maksimum, placeholder untuk teks yang dipotong, dan lain-lain.
-
 ## Tujuan Pengembangan
 
 TextWrap dikembangkan untuk memberikan kemudahan kepada developer JavaScript dalam mengelola teks panjang dengan cara yang lebih rapi dan terstruktur. Dengan menggunakan pendekatan yang serupa dengan modul Python, TextWrap memberikan fleksibilitas dan kemudahan adaptasi bagi developer yang sudah familiar dengan Python, serta menjadi pilihan yang kuat bagi mereka yang mengembangkan aplikasi berbasis teks di JavaScript.
