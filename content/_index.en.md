@@ -17,7 +17,7 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
- A powerful JavaScript library designed to&nbsp;<br class="sm:hx-block hx-hidden" />simplify text wrapping and formatting&nbsp;<br class="sm:hx-block hx-hidden" />in your web applications.
+ A powerful JavaScript library designed to&nbsp;<br class="sm:hx-block hx-hidden" />simplify text wrapping and formatting.
 {{< /hextra/hero-subtitle >}}
 </div>
 
