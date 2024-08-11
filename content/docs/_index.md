@@ -1,5 +1,5 @@
 ---
-linkTitle: "Documentation"
+linkTitle: "Dokumentasi"
 title: Introduction
 ---
 
