@@ -26,4 +26,5 @@ TextWrap dikembangkan untuk memberikan kemudahan kepada developer JavaScript dal
 Dengan TextWrap, pengaturan teks dalam aplikasi Node.js maupun frontend menjadi lebih sederhana dan efektif, memungkinkan developer untuk fokus pada aspek lain dari pengembangan aplikasi tanpa harus mengkhawatirkan format teks yang rumit.
 
 ## Lisensi
+
 TextWrap dilisensikan di bawah **MIT License**, yang memungkinkan pengguna untuk menggunakan, menyalin, mengubah, dan mendistribusikan modul ini dengan kebebasan penuh, selama mereka memberikan atribusi kepada penulis asli.
