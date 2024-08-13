@@ -1,41 +1,47 @@
 ---
 linkTitle: "Dokumentasi"
-title: Introduction
+title: Pendahuluan
+weight: 1
+next: /docs/getting-started
 ---
 
-👋 Hello! Welcome to the Hextra documentation!
+👋 Halo! Selamat datang di dokumentasi TextWrap!
 
 <!--more-->
 
-## What is Hextra?
+## Apa itu TextWrap?
 
-Hextra is a modern, fast and batteries-included [Hugo][hugo] theme built with [Tailwind CSS][tailwind-css].
-Designed for building beautiful websites for documentation, blogs, and websites, it provides out-of-the-box features and flexibility to meet various requirements.
+TextWrap adalah modul JavaScript yang terinspirasi oleh pustaka textwrap di Python. Modul ini membawa kemampuan pemformatan teks yang sama kuatnya ke dalam ekosistem JavaScript, sehingga lebih mudah untuk menangani baris teks yang panjang, mengontrol lekukan, dan memastikan konten Anda terlihat bersih dan profesional di semua perangkat dan platform.
 
-## Features
+## Fitur Utama
 
-- **Beautiful Design** - Inspired by Nextra, Hextra utilizes Tailwind CSS to offer a modern design that makes your site look outstanding.
-- **Responsive Layout and Dark Mode** - It looks great on all devices, from mobile, tablet to desktop. Dark mode is also supported to accommodate various lighting conditions.
-- **Fast and Lightweight** - Powered by Hugo, a lightning-fast static-site generator housed in a single binary file, Hextra keeps its footprint minimal. No JavaScript or Node.js are needed to use it.
-- **Full-text Search** - Built-in offline full-text search powered by FlexSearch, no additional configuration required.
-- **Battery-included** - Markdown, syntax highlighting, LaTeX math formulae, diagrams and Shortcodes elements to enhance your content. Table of contents, breadcrumbs, pagination, sidebar navigation and more are all automatically generated.
-- **Multi-language and SEO Ready** - Multi-language sites made easy with Hugo's multilingual mode. Out-of-the-box support is included for SEO tags, Open Graph, and Twitter Cards.
+{{% steps %}}
 
-## Questions or Feedback?
+### Pembungkusan Teks
+
+TextWrap memungkinkan Anda untuk membungkus teks menjadi beberapa baris berdasarkan lebar yang telah ditentukan. Modul ini mampu menangani berbagai kasus, seperti teks yang ditabulasikan, teks dengan spasi berlebih, dan lain-lain.
+
+### Indentasi Teks
+
+Anda dapat menentukan indentasi untuk baris pertama dan baris berikutnya secara terpisah. Hal ini berguna untuk menciptakan struktur teks yang lebih teratur.
+
+### Penanganan Spasi dan Tabulasi
+
+Modul ini dilengkapi dengan opsi untuk mengganti tabulasi dengan spasi, menghapus spasi ekstra, dan memastikan bahwa setiap akhir kalimat diikuti dengan dua spasi untuk keterbacaan yang lebih baik.
+
+### Pengaturan Pemisahan Kata
+
+TextWrap mendukung pemisahan kata secara cerdas, termasuk opsi untuk memisahkan kata-kata yang panjang dan mengatur bagaimana kata-kata yang diberi tanda hubung harus diperlakukan.
+
+### Opsi Lanjutan
+
+Modul ini juga menyediakan beberapa opsi lanjutan seperti penanganan baris maksimum, placeholder untuk teks yang terpotong, dan lain-lain.
+
+{{% /steps %}}
+
+## Pertanyaan atau Masukan?
 
 {{< callout emoji="❓" >}}
-  Hextra is still in active development.
-  Have a question or feedback? Feel free to [open an issue](https://github.com/imfing/hextra/issues)!
+  TextWrap masih dalam pengembangan aktif.
+  Punya pertanyaan atau masukan? Jangan ragu untuk [membuka masalah](https://github.com/BarudakRosul/textwrap/issues)!
 {{< /callout >}}
-
-## Next
-
-Dive right into the following section to get started:
-
-{{< cards >}}
-  {{< card link="getting-started" title="Getting Started" icon="document-text" subtitle="Learn how to create website using Hextra" >}}
-{{< /cards >}}
-
-[hugo]: https://gohugo.io/
-[flex-search]: https://github.com/nextapps-de/flexsearch
-[tailwind-css]: https://tailwindcss.com/
