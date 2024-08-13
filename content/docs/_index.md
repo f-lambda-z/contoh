@@ -11,7 +11,7 @@ next: /docs/getting-started
 
 ## Apa itu TextWrap?
 
-TextWrap adalah modul JavaScript yang terinspirasi oleh pustaka textwrap di Python. Modul ini membawa kemampuan pemformatan teks yang sama kuatnya ke dalam ekosistem JavaScript, sehingga lebih mudah untuk menangani baris teks yang panjang, mengontrol lekukan, dan memastikan konten Anda terlihat bersih dan profesional di semua perangkat dan platform.
+TextWrap adalah modul JavaScript yang terinspirasi oleh pustaka `textwrap` di Python. Modul ini membawa kemampuan pemformatan teks yang sama kuatnya ke dalam ekosistem JavaScript, sehingga lebih mudah untuk menangani baris teks yang panjang, mengontrol lekukan, dan memastikan konten Anda terlihat bersih dan profesional di semua perangkat dan platform.
 
 ## Fitur Utama
 

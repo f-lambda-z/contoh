@@ -11,7 +11,7 @@ next: /docs/getting-started
 
 ## What is TextWrap?
 
-TextWrap is a JavaScript module inspired by the textwrap library in Python. It brings the same robust text formatting capabilities to the JavaScript ecosystem, making it easier to handle long lines of text, control indentation, and ensure that your content looks clean and professional across all devices and platforms.
+TextWrap is a JavaScript module inspired by the `textwrap` library in Python. It brings the same robust text formatting capabilities to the JavaScript ecosystem, making it easier to handle long lines of text, control indentation, and ensure that your content looks clean and professional across all devices and platforms.
 
 ## Key Features
 
