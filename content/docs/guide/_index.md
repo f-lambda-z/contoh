@@ -1,23 +1,21 @@
 ---
-title: Guide
-weight: 2
+title: Memandu
+weight: 3
 prev: /docs/getting-started
-next: /docs/guide/organize-files
+next: /docs/guide/
 sidebar:
   open: true
 ---
 
-Explore the following sections to learn how to use Hextra:
+Jelajahi bagian berikut untuk mempelajari cara menggunakan TextWrap:
 
 <!--more-->
 
 {{< cards >}}
-  {{< card link="organize-files" title="Organize Files" icon="document-duplicate" >}}
-  {{< card link="configuration" title="Configuration" icon="adjustments" >}}
-  {{< card link="markdown" title="Markdown" icon="markdown" >}}
-  {{< card link="syntax-highlighting" title="Syntax Highlighting" icon="sparkles" >}}
-  {{< card link="latex" title="LaTeX" icon="variable" >}}
-  {{< card link="diagrams" title="Diagrams" icon="chart-square-bar" >}}
-  {{< card link="shortcodes" title="Shortcodes" icon="template" >}}
-  {{< card link="deploy-site" title="Deploy Site" icon="server" >}}
+  {{< card link="text-wrapping" title="Pembungkusan Teks" icon="view-grid" >}}
+  {{< card link="text-filling" title="Pengisian Teks" icon="document-text" >}}
+  {{< card link="text-shortening" title="Pemendekan Teks" icon="template" >}}
+  {{< card link="text-dedenting" title="Penghapusan Indentasi Teks" icon="clipboard" >}}
+  {{< card link="text-indenting" title="Penambahan Indentasi Teks" icon="clipboard-list" >}}
+  {{< card link="advanced-options" title="Opsi Lanjutan" icon="adjustments" >}}
 {{< /cards >}}
