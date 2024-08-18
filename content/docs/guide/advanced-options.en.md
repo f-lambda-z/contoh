@@ -10,12 +10,12 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
 
 ## Supported Options
 
-- **`width`**
-  (default: `70`) The maximum length of wrapped lines. As long as there are no individual words in the input text longer than `width`, `TextWrapper` guarantees that no output line will be longer than `width` characters.
-- **`expand_tabs`**
-  (default: `true`) If `true`, then all tab characters in text will be expanded to spaces using the [`expandTabs()`](https://npm.im/@barudakrosul/expand-tabs) method of text.
-- **`tabsize`**
-  (default: `8`) If `expand_tabs` is `true`, then all tab characters in text will be expanded to zero or more spaces, depending on the current column and the given tab size.
+- **`width`**</br>
+  (default: `70`) - The maximum length of wrapped lines. As long as there are no individual words in the input text longer than `width`, `TextWrapper` guarantees that no output line will be longer than `width` characters.
+- **`expand_tabs`**</br>
+  (default: `true`) - If `true`, then all tab characters in text will be expanded to spaces using the [`expandTabs()`](https://npm.im/@barudakrosul/expand-tabs) method of text.
+- **`tabsize`**</br>
+  (default: `8`) - If `expand_tabs` is `true`, then all tab characters in text will be expanded to zero or more spaces, depending on the current column and the given tab size.
 
 ## Basic Usage
 
