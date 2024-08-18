@@ -21,7 +21,7 @@ console.log(shortened);
 
 Hasil:
 
-```javascript
+```text
 This is a long piece of [...]
 ```
 
