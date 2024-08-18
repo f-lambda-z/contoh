@@ -4,7 +4,7 @@ weight: 6
 prev: /docs/guide/text-indenting
 ---
 
-In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer flexible text formatting. Beyond basic usage, these functions provide advanced options that give you fine control over how text is processed and formatted.
+In TextWrap, the `wrap()`, `fill()`, and `shorten()` methods are designed to offer flexible text formatting. Beyond basic usage, these functions provide advanced options that give you fine control over how text is processed and formatted.
 
 <!--more-->
 
@@ -17,7 +17,7 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
 - **`tabsize`**</br>
   (default: `8`) – If `expand_tabs` is `true`, then all tab characters in text will be expanded to zero or more spaces, depending on the current column and the given tab size.
 - **`replace_whitespace`**</br>
-  (default: `true`) – If `true`, after tab expansion but before wrapping, the `wrap()`, `fill()`, or `shorten()` method will replace each whitespace character with a single space. The whitespace characters replaced are as follows: tab, newline, vertical tab, formfeed, and carriage return (`'\t\n\v\f\r'`).</br>
+  (default: `true`) – If `true`, after tab expansion but before wrapping, the `wrap()`, `fill()`, or `shorten()` methods will replace each whitespace character with a single space. The whitespace characters replaced are as follows: tab, newline, vertical tab, formfeed, and carriage return (`'\t\n\v\f\r'`).</br>
   {{< callout type="info" >}}
     If `expand_tabs` is `false` and `replace_whitespace` is `true`, each tab character will be replaced by a single space, which is not the same as tab expansion.
   {{< /callout >}}
@@ -46,9 +46,9 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
 - **`break_long_words`**</br>
   (default: `true`) – If `true`, then words longer than `width` will be broken in order to ensure that no lines are longer than `width`. If it is `false`, long words will not be broken, and some lines may be longer than `width`. (Long words will be put on a line by themselves, in order to minimize the amount by which `width` is exceeded).
 - **`break_on_hyphens`**</br>
-  (default: `true`) If `true`, wrapping will occur preferably on whitespaces and right after hyphens in compound words, as it is customary in English. If false, only whitespaces will be considered as potentially good places for line breaks, but you need to set `break_long_words` to false if you want truly insecable words. Default behaviour in previous versions was to always allow breaking hyphenated words.
+  (default: `true`) – If `true`, wrapping will occur preferably on whitespaces and right after hyphens in compound words, as it is customary in English. If `false`, only whitespaces will be considered as potentially good places for line breaks, but you need to set `break_long_words` to `false` if you want truly insecable words. Default behaviour in previous versions was to always allow breaking hyphenated words.
 - **`max_lines`**</br>
-  (default: `null`) If not `null`, then the output will contain at most `max_lines` lines, with placeholder appearing at the end of the output.
+  (default: `null`) – If not `null`, then the output will contain at most `max_lines` lines, with placeholder appearing at the end of the output.
 - **`placeholder`**</br>
   (default: `' [...]'`) String that will appear at the end of the output text if it has been truncated.
 
