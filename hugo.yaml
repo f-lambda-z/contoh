@@ -72,14 +72,10 @@ menu:
       params:
         type: separator
       weight: 1
-    - identifier: about
-      name: "About"
-      pageRef: "/about"
-      weight: 2
     - identifier: contact
-      name: "Contact ↗"
+      name: "Kontak ↗"
       url: "/contact"
-      weight: 3
+      weight: 2
 
 params:
   description: Text wrapping and filling.
