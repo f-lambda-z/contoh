@@ -45,6 +45,12 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
   Since the sentence detection algorithm relies on `String.toLowerCase` for the definition of “lowercase letter”, and a convention of using two spaces after a period to separate sentences on the same line, it is specific to English-language texts.
 - **`break_long_words`**</br>
   (default: `true`) – If `true`, then words longer than `width` will be broken in order to ensure that no lines are longer than `width`. If it is `false`, long words will not be broken, and some lines may be longer than `width`. (Long words will be put on a line by themselves, in order to minimize the amount by which `width` is exceeded).
+- **`break_on_hyphens`**</br>
+  (default: `true`) If `true`, wrapping will occur preferably on whitespaces and right after hyphens in compound words, as it is customary in English. If false, only whitespaces will be considered as potentially good places for line breaks, but you need to set `break_long_words` to false if you want truly insecable words. Default behaviour in previous versions was to always allow breaking hyphenated words.
+- **`max_lines`**</br>
+  (default: `null`) If not `null`, then the output will contain at most `max_lines` lines, with placeholder appearing at the end of the output.
+- **`placeholder`**</br>
+  (default: `' [...]'`) String that will appear at the end of the output text if it has been truncated.
 
 ## Basic Usage
 
@@ -71,4 +77,22 @@ Result:
   'without cutting',
   'words in half.'
 ]
+```
+
+Another example:
+
+```javascript {filename="example.js"}
+const text = "This is a long piece of text that needs to be shortened for display purposes.";
+const options = {
+  placeholder: " (...)"
+};
+const shortened = textwrap.shorten(text, 30, options);
+
+console.log(shortened);
+```
+
+Result:
+
+```text
+This is a long piece of (...)
 ```
