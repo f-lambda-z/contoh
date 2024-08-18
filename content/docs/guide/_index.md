@@ -2,7 +2,7 @@
 title: Memandu
 weight: 3
 prev: /docs/getting-started
-next: /docs/guide/
+next: /docs/guide/text-wrapping
 sidebar:
   open: true
 ---
