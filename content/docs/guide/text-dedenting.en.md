@@ -5,7 +5,7 @@ prev: /docs/guide/text-shortening
 next: /docs/guide/text-indenting
 ---
 
-Text dedenting is a process used to remove common leading whitespace from each line in a block of text. This is particularly useful when working with multi-line strings that are indented in source code but need to be aligned properly when rendered or displayed. TextWrap.js provides a convenient dedent method to simplify this task.
+Text dedenting is a process used to remove common leading whitespace from each line in a block of text. This is particularly useful when working with multi-line strings that are indented in source code but need to be aligned properly when rendered or displayed. TextWrap provides a convenient `dedent` method to simplify this task.
 
 <!--more-->
 
