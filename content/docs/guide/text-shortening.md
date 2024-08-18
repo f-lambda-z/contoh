@@ -1,6 +1,6 @@
 ---
 title: Pemendekan Teks
-weight: 1
+weight: 3
 prev: /docs/guide/text-filling
 next: /docs/guide/text-dedenting
 ---
