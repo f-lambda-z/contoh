@@ -124,7 +124,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/BarudakRosul/textwrap/edit/master/docs"
+    base: "https://github.com/BarudakRosul/textwrap/edit/master/sites/content"
 
   blog:
     list:
@@ -155,3 +155,4 @@ params:
       # emitMetadata: 0
       # inputPosition: top
       # lang: en
+publishDir: ../public
