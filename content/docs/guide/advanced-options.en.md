@@ -25,6 +25,24 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
   {{< callout type="info" >}}
     If `replace_whitespace` is `false`, newlines may appear in the middle of a line and cause strange output. For this reason, text should be split into paragraphs (using [`String.splitLines()`](https://npm.im/@barudakrosul/split-lines) or similar) which are wrapped separately.
   {{< /callout >}}
+- **`drop_whitespace`**</br>
+  (default: `true`) – If `true`, whitespace at the beginning and ending of every line (after wrapping but before indenting) is dropped. Whitespace at the beginning of the paragraph, however, is not dropped if non-whitespace follows it. If whitespace being dropped takes up an entire line, the whole line is dropped.
+- **`initial_indent`**</br>
+  (default: `''`) – String that will be prepended to the first line of wrapped output. Counts towards the length of the first line. The empty string is not indented.
+- **`subsequent_indent`**</br>
+  (default: `''`) – String that will be prepended to all lines of wrapped output except the first. Counts towards the length of each line except the first.
+- **`fix_sentence_endings`**</br>
+  (default: `false`) – If `true`, TextWrap attempts to detect sentence endings and ensure that sentences are always separated by exactly two spaces. This is generally desired for text in a monospaced font. However, the sentence detection algorithm is imperfect: it assumes that a sentence ending consists of a lowercase letter followed by one of `'.'`, `'!'`, or `'?'`, possibly followed by one of `'"'` or `"'"`, followed by a space. One problem with this algorithm is that it is unable to detect the difference between “Dr.” in</br>
+  ```
+  [...] Dr. Frankenstein's monster [...]
+  ```
+  </br>
+  ```
+  [...] See Spot. See Spot run [...]
+  ```
+  </br>
+  `fix_sentence_endings` is `false` by default.</br>
+  Since the sentence detection algorithm relies on `String.toLowerCase` for the definition of “lowercase letter”, and a convention of using two spaces after a period to separate sentences on the same line, it is specific to English-language texts.
 
 ## Basic Usage
 
