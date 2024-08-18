@@ -11,11 +11,20 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
 ## Supported Options
 
 - **`width`**</br>
-  (default: `70`) - The maximum length of wrapped lines. As long as there are no individual words in the input text longer than `width`, `TextWrapper` guarantees that no output line will be longer than `width` characters.
+  (default: `70`) – The maximum length of wrapped lines. As long as there are no individual words in the input text longer than `width`, TextWrap guarantees that no output line will be longer than `width` characters.
 - **`expand_tabs`**</br>
-  (default: `true`) - If `true`, then all tab characters in text will be expanded to spaces using the [`expandTabs()`](https://npm.im/@barudakrosul/expand-tabs) method of text.
+  (default: `true`) – If `true`, then all tab characters in text will be expanded to spaces using the [`expandTabs()`](https://npm.im/@barudakrosul/expand-tabs) method of text.
 - **`tabsize`**</br>
-  (default: `8`) - If `expand_tabs` is `true`, then all tab characters in text will be expanded to zero or more spaces, depending on the current column and the given tab size.
+  (default: `8`) – If `expand_tabs` is `true`, then all tab characters in text will be expanded to zero or more spaces, depending on the current column and the given tab size.
+- **`replace_whitespace`**</br>
+  (default: `true`) – If `true`, after tab expansion but before wrapping, the `wrap()`, `fill()`, or `shorten()` method will replace each whitespace character with a single space. The whitespace characters replaced are as follows: tab, newline, vertical tab, formfeed, and carriage return (`'\t\n\v\f\r'`).</br>
+  {{< callout type="info" >}}
+    If `expand_tabs` is `false` and `replace_whitespace` is `true`, each tab character will be replaced by a single space, which is not the same as tab expansion.
+  {{< /callout >}}
+  </br>
+  {{< callout type="info" >}}
+    If `replace_whitespace` is `false`, newlines may appear in the middle of a line and cause strange output. For this reason, text should be split into paragraphs (using [`String.splitLines()`](https://npm.im/@barudakrosul/split-lines) or similar) which are wrapped separately.
+  {{< /callout >}}
 
 ## Basic Usage
 
