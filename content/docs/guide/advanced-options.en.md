@@ -33,11 +33,11 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
   (default: `''`) – String that will be prepended to all lines of wrapped output except the first. Counts towards the length of each line except the first.
 - **`fix_sentence_endings`**</br>
   (default: `false`) – If `true`, TextWrap attempts to detect sentence endings and ensure that sentences are always separated by exactly two spaces. This is generally desired for text in a monospaced font. However, the sentence detection algorithm is imperfect: it assumes that a sentence ending consists of a lowercase letter followed by one of `'.'`, `'!'`, or `'?'`, possibly followed by one of `'"'` or `"'"`, followed by a space. One problem with this algorithm is that it is unable to detect the difference between “Dr.” in</br>
-  ```
+  ```mathematica
   [...] Dr. Frankenstein's monster [...]
   ```
 
-  ```
+  ```mathematica
   [...] See Spot. See Spot run [...]
   ```
 

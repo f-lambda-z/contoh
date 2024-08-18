@@ -1,7 +1,5 @@
 ---
 title: Contact
-sidebar:
-  open: false
 toc: false
 ---
 

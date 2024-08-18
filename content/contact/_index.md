@@ -1,7 +1,5 @@
 ---
 title: Kontak
-sidebar:
-  open: false
 toc: false
 ---
 
