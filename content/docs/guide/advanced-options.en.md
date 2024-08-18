@@ -36,13 +36,15 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
   ```
   [...] Dr. Frankenstein's monster [...]
   ```
-  </br>
+
   ```
   [...] See Spot. See Spot run [...]
   ```
   </br>
   `fix_sentence_endings` is `false` by default.</br>
   Since the sentence detection algorithm relies on `String.toLowerCase` for the definition of “lowercase letter”, and a convention of using two spaces after a period to separate sentences on the same line, it is specific to English-language texts.
+- **`break_long_words`**</br>
+  (default: `true`) – If `true`, then words longer than `width` will be broken in order to ensure that no lines are longer than `width`. If it is `false`, long words will not be broken, and some lines may be longer than `width`. (Long words will be put on a line by themselves, in order to minimize the amount by which `width` is exceeded).
 
 ## Basic Usage
 
