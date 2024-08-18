@@ -1,24 +1,24 @@
 ---
-title: Text Indenting
+title: Pengindentasi Teks
 weight: 5
 prev: /docs/guide/text-dedenting
 next: /docs/guide/advanced-options
 ---
 
-Text indenting is the process of adding a specific prefix to the beginning of each line in a block of text. This can be useful for creating bullet points, quotes, or simply adding structure to your text. TextWrap provides a straightforward `indent` method that lets you prepend a specified string to every line in a text block.
+Indentasi teks adalah proses menambahkan awalan tertentu ke awal setiap baris dalam blok teks. Hal ini berguna untuk membuat poin-poin penting, kutipan, atau sekadar menambahkan struktur pada teks Anda. TextWrap menyediakan metode `indent` langsung yang memungkinkan Anda menambahkan string tertentu ke setiap baris dalam blok teks.
 
 <!--more-->
 
-## Basic Usage
+## Penggunaan Dasar
 
-The `indent` method allows you to add a prefix to every line of your text. This is particularly useful when you need to format lists, quotes, or other structured text.
+Metode `indent` memungkinkan Anda untuk menambahkan awalan pada setiap baris teks Anda. Hal ini sangat berguna ketika Anda perlu memformat daftar, kutipan, atau teks terstruktur lainnya.
 
 ```javascript {filename="example.js"}
 const indented = textwrap.indent("Apple\nBanana\nOrange\nBlueberry\nAvocado\nMango", "- ");
 console.log(indented);
 ```
 
-Result:
+Hasil:
 
 ```text
 - Apple
@@ -29,13 +29,13 @@ Result:
 - Mango
 ```
 
-## Custom Predicate
+## Predikat Khusus
 
-A predicate in programming is a function that returns a boolean value (`true` or `false`) based on some condition. When using a custom predicate with the indent method, the predicate is applied to each line of text, and only those lines for which the predicate returns true will be indented.
+Predikat dalam pemrograman adalah fungsi yang mengembalikan nilai boolean (`true` atau `false`) berdasarkan suatu kondisi. Saat menggunakan predikat khusus dengan metode indentasi, predikat diterapkan pada setiap baris teks, dan hanya baris yang predikatnya bernilai benar yang akan diindentasi.
 
-Let’s start with a basic example where we indent only lines that contain a specific keyword.
+Mari kita mulai dengan contoh dasar di mana kita hanya membuat indentasi pada baris yang berisi kata kunci tertentu.
 
-### 1. Indenting Lines Containing a Specific Word
+### 1. Mengindentasi Baris yang Mengandung Kata Tertentu
 
 ```javascript {filename="example.js"}
 const text = `Apple is a fruit.
@@ -47,7 +47,7 @@ const indented = textwrap.indent(text, "> ", lines => lines.includes("fruit"));
 console.log(indented);
 ```
 
-Result:
+Hasil:
 
 ```text
 > Apple is a fruit.
@@ -55,7 +55,7 @@ Bananas are yellow.
 > An orange is also a fruit.
 ```
 
-Another example:
+Contoh lainnya:
 
 ```javascript {filename="example.js"}
 const text = "Apple\nBanana\nOrange\nBlueberry\nAvocado\nMango";
@@ -63,7 +63,7 @@ const indented = textwrap.indent(text, "- ", lines => lines.startsWith("A"));
 console.log(indented);
 ```
 
-Result:
+Hasil:
 
 ```text
 - Apple
@@ -74,9 +74,9 @@ Blueberry
 Mango
 ```
 
-### 2. Indenting Based on Length or Keywords (Multiple Conditions)
+### 2. Mengindentasi Berdasarkan Panjang atau Kata Kunci (Beberapa Kondisi)
 
-You can create more complex predicates by combining multiple conditions. For example, you might want to indent lines that are either very long or contain specific keywords.
+Anda dapat membuat predikat yang lebih kompleks dengan menggabungkan beberapa kondisi. Misalnya, Anda mungkin ingin membuat indentasi baris yang sangat panjang atau mengandung kata kunci tertentu.
 
 ```javascript {filename="example.js"}
 const text = `Short line.
@@ -89,7 +89,7 @@ const indented = textwrap.indent(text, "- ", line => line.length > 30 || line.in
 console.log(indented);
 ```
 
-Result:
+Hasil:
 
 ```text
 Short line.
@@ -98,16 +98,16 @@ Another short line.
 - Here is a line about fruits and vegetables.
 ```
 
-### 3. Indenting All Lines Including Empty Lines
+### 3. Mengindentasi Semua Baris Termasuk Baris Kosong
 
-To indent all lines, including empty ones, you can use a custom predicate with value `true`.
+Untuk menambahkan indentasi ke dalam semua baris, termasuk baris kosong, Anda dapat menggunakan predikat khusus dengan nilai `true`.
 
 ```javascript {filename="example.js"}
 const indented = textwrap.indent("Apple\n\nBanana\n\nOrange\n\nBlueberry\n\nAvocado\n\nMango", "- ", lines => true);
 console.log(indented);
 ```
 
-Result:
+Hasil:
 
 ```text
 - Apple
