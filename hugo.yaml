@@ -76,9 +76,9 @@ menu:
       name: "About"
       pageRef: "/about"
       weight: 2
-    - identifier: hugoDocs
-      name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
+    - identifier: contact
+      name: "Contact ↗"
+      url: "/contact"
       weight: 3
 
 params:
