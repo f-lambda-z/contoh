@@ -21,7 +21,7 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
   {{< callout type="info" >}}
     If `expand_tabs` is `false` and `replace_whitespace` is `true`, each tab character will be replaced by a single space, which is not the same as tab expansion.
   {{< /callout >}}
-  </br>
+
   {{< callout type="info" >}}
     If `replace_whitespace` is `false`, newlines may appear in the middle of a line and cause strange output. For this reason, text should be split into paragraphs (using [`String.splitLines()`](https://npm.im/@barudakrosul/split-lines) or similar) which are wrapped separately.
   {{< /callout >}}
@@ -40,7 +40,7 @@ In TextWrap, the `wrap`, `fill`, and `shorten` functions are designed to offer f
   ```
   [...] See Spot. See Spot run [...]
   ```
-  </br>
+
   `fix_sentence_endings` is `false` by default.</br>
   Since the sentence detection algorithm relies on `String.toLowerCase` for the definition of “lowercase letter”, and a convention of using two spaces after a period to separate sentences on the same line, it is specific to English-language texts.
 - **`break_long_words`**</br>
